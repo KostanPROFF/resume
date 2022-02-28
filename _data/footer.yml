@@ -5,12 +5,15 @@
 
 main:
   social:
-    - title: "Pinterest"
-      icon: "fab fa-pinterest"
-      url: "https://www.pinterest.com/"
+    - title: "Telegram"
+      icon: "fab fa-telegram"
+      url: "https://t.me/kostanproff"
+    - title: "Linkedin"
+      icon: "fab fa-linkedin"
+      url: "https://linkedin.com/in/kostan-proff"
+    - title: "GitHub"
+      icon: "fab fa-github"
+      url: "http://github.com/kostanproff"
     - title: "Instagram"
       icon: "fab fa-instagram"
-      url: "https://instagram.com/"
-    - title: "Dribbble"
-      icon: "fab fa-dribbble"
-      url: "https://dribbble.com/"
+      url: "https://instagram.com/KostanPROFF"

@@ -1,10 +1,10 @@
 # ----------------------------------------------------
 #
-#	Myour - One Page Resume & CV Jekyll Theme
+#	DevOps Engineer - Konstantin Kozulko
 #	Version: 1.0
-#	Author: beshleyua
-#	Author URL: http://themeforest.net/user/beshleyua
-#	Copyright © Myour by beshleyua. All Rights Reserved.
+#	Author: Konstantin Kozulko
+#	Author URL: https://kostanproff.com
+#	Copyright © Konstantin Kozulko. All Rights Reserved.
 #
 # ----------------------------------------------------
 #
@@ -29,9 +29,9 @@
 # in the templates via {{ site.myvariable }}.
 
 # basic settings
-title: "Myour - One Page Resume & CV Jekyll Theme"
-email: "your-email@example.com"
-description: "Jekyll Resume / CV / vCard / Portfolio / Personal template"
+title: "DevOps Engineer - Konstantin Kozulko"
+email: "2913814@gmail.com"
+description: "Resume / CV / vCard / Personal site"
 author: "Admin"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -43,11 +43,11 @@ paginate_path: "/blog/page:num/"
 permalink: pretty
 
 # disqus comments
-disqus_comments: "yes" # yes - show disqus comments, no - hide disqus comments
+disqus_comments: "no" # yes - show disqus comments, no - hide disqus comments
 disqus_shortname: "glitche-jekyll-theme" # read more here https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
 
 # formsubmit.io
-formsubmit_email: "beshleyweb@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
+formsubmit_email: "2913814@gmail.com" # sign up on https://formsubmit.io/ and confirm your email
 
 # collections
 collections:

@@ -5,12 +5,12 @@
 
 ### Started [ started ]
 started:
-  title: "Joé <br />Wilson"
+  title: "Konstantin <br />Kozulko"
   typed:
-    - "Consultant and Mentor"
+    - "DevOps Engineer"
     - "Web Designer"
-    - "Programmer"
-  text: "Hello! I am Web Developer from United States, New York. I have rich experience in web site design and building, also I am good at wordpress. I love to talk with you about our unique."
+    - "Graphic Designer"
+  text: "Hello! I am DevOps Engineer from Kyiv, Ukraine. I used to be a graphic designer, but I stopped enjoying it and decided to become a devops engineer."
   button:
     text: "Contact Me"
     link: "#section-contacts"
@@ -19,54 +19,72 @@ started:
 about:
   title: "About Me"
   subtitle: "My story"
-  text: "<p>Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p><p>Pellentesque posuere. Praesent turpis. Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.</p>"
+  text: "<p>By education I am a programmer, but I never liked programming, so after graduating from college I decided to move towards graphic design (since childhood I love to draw).</p><p>Unfortunately after 15 years of work as a graphic designer I did not enjoy this profession and I decided to look for something else. I have always had a taste for computers, I love to configure, install software and trabelshooting. So Devops is something that satisfies all my interests.</p>"
   list:
-    - label: "Age"
-      value: "24"
-
+ 
     - label: "Residence"
-      value: "USA"
+      value: "Ukraine"
 
     - label: "Freelance"
       value: "Available"
 
     - label: "Address"
-      value: "San Francisco"
+      value: "Kyiv"
 
     - label: "Phone"
-      value: "+1 256 254 84 56"
+      value: "+380 93 875 13 57"
 
     - label: "E-mail"
-      value: "alejandroa@gmail.com"
+      value: "2913814@gmail.com"
+
+    - label: "Telegram"
+      value: "@kostanproff"
 
 ### Services [ services ]
 services:
-  title: "Services"
+  title: "Projects"
   subtitle: "What I Do"
   items:
-    - icon: "fas fa-brain"
-      name: "Economic <br />Science"
-      text: "Economics is a social science concerned with the production, consumption of goods and services."
+    - icon: "fas fa-cloud"
+      name: "Cloud <br />Services"
+      text: "Working with cloud services."
 
-    - icon: "fas fa-ad"
-      name: "Marketing <br />& Advertising"
-      text: "Advertising Management though is a complex process of employing various media to sell a product or service."
+    - icon: "fas fa-filter"
+      name: "Cisco <br />Packet Tracer"
+      text: "Working with computer networks, knowledge of Cisco Packet Tracer."
 
-    - icon: "fab fa-chrome"
-      name: "Web <br />Development"
-      text: "The web development process includes: web design, web content, client-side / server-side scripting and network security configuration."
+    - icon: "fab fa-adn"
+      name: "Ansible <br />Playbook"
+      text: "Can write Ansible playbook to automate deployment and routine tasks."
 
-    - icon: "fas fa-headphones"
-      name: "Music <br />Writing"
-      text: "Sheet music is the basic form in which Western classical music is notated so that it can be learned and performed by solo singers."
+    - icon: "fab fa-docker"
+      name: "Docker <br />CI/CD"
+      text: "Packaged sites in Docker for future updates, set up CI/CD pipeline using Jenkins for continuous delivery of web application updates."
 
-    - icon: "fas fa-gamepad"
-      name: "Game <br />Development"
-      text: "Come Up With a Game Idea. An idea is the first thing that comes to mind when a game is being described before creating."
+    - icon: "fab fa-aws"
+      name: "Amazon <br />Web Services"
+      text: "I have experience with AWS, EC2, S3 services, RDS databases, VPS networks, Route 53, IAM, CloudFront, CloudWatch."
 
-    - icon: "fas fa-video"
-      name: "Photography <br />& Video"
-      text: "Sessions. If you are a photographer that spends most of the time in a portrait studio, you can charge for your session."
+    - icon: "fas fa-globe"
+      name: "Web-site <br />Deploy"
+      text: "I have my own website https://kostanproff.com built on Jekyll engine on AWS S3 bucket with my domain connected via Route53 and created SSL certificate in Certificate Manager connected to website via CloudFront. Configured auto-deploy in Github Actions: https://github.com/KostanPROFF/online-cv"
+
+    - icon: "fas fa-info"
+      name: "Terraform <br />infrastructure"
+      text: "Deployed infrastructure using Terraform to create WordPress on AWS. To do this I created 2 EC2 instances, in different availability zones using VPC networks, RDS database, LoadBalacer for load balancing, connected EFS for data storage and backup, load metrics were collected using CloudWatch. The code is available on GitHub: https://github.com/KostanPROFF/terraform_aws_wordpress"
+
+    - icon: "fas fa-cube"
+      name: "Kubernetes <br />cluster"
+      text: "Created a local Kubernetes cluster using Vagrantfile on VirtualBox: https://github.com/KostanPROFF/mirantis_task_for_devops_intern"
+
+### Stack [ stack ]
+stack:
+  title: "Projects"
+  subtitle: "What I Do"
+  items:
+    - icon: "fas fa-cloud"
+      name: "Cloud <br />Services"
+      text: "Working with cloud services."
 
 ### Pricing [ pricing ]
 pricing:
@@ -137,110 +155,53 @@ resume:
     subtitle: "Working with"
     items:
       - year: "Present"
-        name: "The Turin <br />Olympics"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+        name: "DevOps <br />Project Work "
+        text: ""
 
-      - year: "2016-2018"
-        name: "Red <br />Drifting"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+      - year: "2015-2020"
+        name: "3D Graphic <br />Designer"
+        text: ""
 
-      - year: "2014-2016"
-        name: "World <br />Economy"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+      - year: "2005-2015"
+        name: " Freelance Web and <br />Graphic Designer"
+        text: ""
 
-      - year: "2012-2014"
-        name: "Art Director <br />Facedevs"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
-
+     
   education:
     title: "Education"
     subtitle: "Studied at"
     items:
-      - year: "2011-2012"
-        name: "Art University <br />New York"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+      - year: "1999-2002"
+        name: "Kyiv National University Of <br />Construction And Architecture"
+        text: "Computer Applications Field Of Study IT."
 
-      - year: "2010-2011"
-        name: "Programming Course <br />Paris"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+      - year: "2008-2013"
+        name: "Open International University of <br />Human Development «Ukraine»"
+        text: "Bachelor's degree in computer-aided environmental-economic monitoring."
 
-      - year: "2009-2010"
-        name: "Web Design Course <br />London"
-        text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna."
+      - year: "2021-2022"
+        name: "Course <br />GeekBrains"
+        text: "DevOps"
 
 ### Skills [ skills ]
 skills:
   columns:
-    - type: "default" #skills progress type - default, dotted, circles
-      title: "Design Skills"
-      subtitle: "Creative ability"
-      slug: "design"
-      items:
-        - label: "Web Layout"
-          value: "90" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "Illustrations"
-          value: "70" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "Photoshop"
-          value: "95" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "Graphic Design"
-          value: "85" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-    - type: "dotted" #skills progress type - default, dotted, circles
+    - type: "circles" #skills progress type - default, dotted, circles
       title: "Language Skills"
       subtitle: "Reading and writing"
       slug: "lang"
       items:
+        - label: "Russian"
+          value: "100" #0-100 progress in %
+          text: "Native"
+
+        - label: "Ukrainian"
+          value: "100" #0-100 progress in %
+          text: "Native"
+
         - label: "English"
-          value: "90" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "German"
-          value: "70" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "Italian"
-          value: "55" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-        - label: "French"
-          value: "85" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
-
-    - type: "circles" #skills progress type - default, dotted, circles
-      title: "Coding Skills"
-      subtitle: "Developing on"
-      slug: "code"
-      items:
-        - label: "WordPress"
-          value: "90" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
-
-        - label: "PHP, MYSQL"
-          value: "75" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
-
-        - label: "JavaScript"
-          value: "85" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
-
-        - label: "Angular"
-          value: "80" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
-
-        - label: "HTML, CSS"
-          value: "95" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
-
-        - label: "Python"
-          value: "90" #0-100 progress in %
-          text: "Etiam sit amet orci eget eros faucibus tincidunt."
+          value: "25" #0-100 progress in %
+          text: "A2. Read and write, can't talk."
 
 ### Testimonials [ testimonials ]
 testimonials:
@@ -306,24 +267,22 @@ portfolio:
 contacts:
   title: "Contact"
   subtitle: "Let's talk"
-  name: "Joe Wilson"
-  subname: "Consultant & Mentor"
-  signature: "Joe Wilson"
+  name: "Konstantin Kozulko"
+  subname: "DevOps Engineer"
+  signature: "Konstantin Kozulko"
   list:
-    - label: "Age:"
-      value: "24"
-
+ 
     - label: "Residence:"
-      value: "USA"
-
-    - label: "Freelance:"
-      value: "Available"
+      value: "Ukraine"
 
     - label: "Address:"
-      value: "San Francisco"
+      value: "Kyiv"
 
     - label: "Phone:"
-      value: "+1 256 254 84 56"
+      value: "+380 93 875 13 57"
 
     - label: "E-mail:"
-      value: "alejandroa@gmail.com"
+      value: "2913814@gmail.com"
+    
+    - label: "Telegram:"
+      value: "@kostanproff"

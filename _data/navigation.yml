@@ -9,7 +9,7 @@ main:
   # Home
   - title: "Home"
     url: "/"
-    parent: 1
+    parent: 0
     childs:
         - title: "Home 1"
           url: "/"
@@ -29,13 +29,13 @@ main:
 
   # Resume
   - title: "Resume"
-    url: "#section-experience"
+    url: "#section-services"
     parent: 0
 
   # Portfolio
-  - title: "Portfolio"
-    url: "#section-portfolio"
-    parent: 0
+  #- title: "Portfolio"
+  #  url: "#section-portfolio"
+  #  parent: 0
 
   # Contacts
   - title: "Contacts"
@@ -43,12 +43,12 @@ main:
     parent: 0
 
   # Blog
-  - title: "Blog"
-    url: "blog/"
-    parent: 1
-    childs:
-        - title: "Blog List"
-          url: "blog/"
-
-        - title: "Blog Single"
-          url: "music/2020/08/05/by-spite-about/"
+  # - title: "Blog"
+  #  url: "blog/"
+   # parent: 1
+    #childs:
+     #   - title: "Blog List"
+      #    url: "blog/"
+#
+ #       - title: "Blog Single"
+  #        url: "music/2020/08/05/by-spite-about/"

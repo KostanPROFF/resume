@@ -397,6 +397,8 @@
 	background-position: center center;
 	background-size: cover;
 	background-color: $active_profile_color;
+	clip-path: circle(75% at 10% 45%);
+	-webkit-clip-path: circle(75% at 10% 45%);
 	.background-img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
