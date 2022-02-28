@@ -40,6 +40,14 @@ about:
     - label: "Telegram"
       value: "@kostanproff"
 
+    - label: "Linkedin"
+      value: "kostan-proff"
+
+    - label: "GitHub"
+      value: "kostanproff"
+
+
+
 ### Services [ services ]
 services:
   title: "Projects"
@@ -286,3 +294,9 @@ contacts:
     
     - label: "Telegram:"
       value: "@kostanproff"
+
+    - label: "Linkedin"
+      value: "kostan-proff"
+
+    - label: "GitHub"
+      value: "kostanproff"
