@@ -8,6 +8,17 @@
 ( function( $ ) {
 	'use strict';
 
+	/* plugins that a page did not load become no-ops */
+	$.each(['magnificPopup','isotope','imagesLoaded','owlCarousel','jarallax','rrssb'], function(i, name){
+		if (!$.fn[name]) { $.fn[name] = function(){ return this; }; }
+	});
+
+	/* the preloader no longer covers the first paint; it is only used for page transitions */
+	var $preloader = $('.preloader');
+	$preloader.find('.spinner').css({opacity: 0});
+	$preloader.find('.box-1, .box-2').velocity({translateY: '-100%'}, {duration: 0});
+	$preloader.addClass('ready');
+
 	window.onpageshow = function(event) {if (event.persisted) {window.location.reload() }};
 
 	$(window).on("load", function() {
@@ -15,29 +26,7 @@
 		/*
 			Preloader
 		*/
-		var preload = $('.preloader');
-		setTimeout(function(){
-			preload.find('.spinner').velocity({
-				opacity: '0',
-				translateY: '-40px'
-			}, {
-				duration: 400,
-				complete: function(){
-					preload.find('.box-1').velocity({
-						translateY: '-100%'
-					}, {
-						duration: 1000,
-						easing: [0.7,0,0.3,1]
-					});
-					preload.find('.box-2').velocity({
-						translateY: '-100%'
-					}, {
-						duration: 400,
-						easing: [0.7,0,0.3,1]
-					});
-				}
-			});
-		}, 1000);
+		/* preloader: hidden from the start, see above */
 
 		/*
 			Typed Subtitle
