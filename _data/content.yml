@@ -9,8 +9,8 @@ started:
     - "DevOps Engineer"
     - "AWS · Terraform · Kubernetes"
     - "CI/CD · Monitoring"
-  text: "I build and run infrastructure on AWS and GCP: Terraform, Ansible, Docker, Kubernetes, CI/CD and monitoring. Before DevOps I spent 15 years as a system administrator and designer."
-  status: "open to remote work · Kyiv, UTC+2"
+  text: "DevOps and Platform Engineer with 15+ years in IT. I build CI/CD pipelines, cloud infrastructure on AWS, GCP and Azure, Kubernetes clusters, and automate everything with Terraform and Ansible."
+  status: "open to remote work · Antelope, CA (US)"
   button:
     text: "Contact Me"
     link: "#section-contacts"
@@ -19,19 +19,19 @@ started:
 about:
   title: "About Me"
   subtitle: "whoami"
-  text: "<p>I studied programming, then spent years as a system administrator and as a freelance web, graphic and 3D designer. Setting up servers, networks and software and fixing things when they break was always the part I liked most, so in 2021 I moved into DevOps.</p><p>Today I automate infrastructure with Terraform and Ansible, run containers in Docker and Kubernetes, build CI/CD pipelines and keep an eye on everything with Prometheus and Grafana. Because of my health I work remotely only.</p>"
+  text: "<p>DevOps and Platform Engineer with 15+ years in IT and 3+ years of hands-on DevOps work. I design and run CI/CD pipelines, multi-cloud infrastructure, Docker and Kubernetes workloads, and infrastructure-as-code with Terraform and Ansible.</p><p>Before DevOps I spent more than a decade as a system administrator: Linux and macOS fleets, networks, backups and security hardening. I work fully remote, comfortable with async communication and self-directed projects, and available for contract or project-based work.</p>"
   list:
-    - label: "Residence"
-      value: "Kyiv, Ukraine"
+    - label: "Location"
+      value: "Antelope, CA, USA"
 
     - label: "Work format"
       value: "Remote"
 
     - label: "Phone"
-      value: "+380 93 875 13 57"
+      value: "+1 (916) 883-8094"
 
     - label: "E-mail"
-      value: "2913814@gmail.com"
+      value: "kostan@proff.dev"
 
     - label: "Telegram"
       value: "@kostanproff"
@@ -49,7 +49,7 @@ stack:
   items:
     - name: "cloud"
       area: "infrastructure"
-      tools: "AWS (EC2, S3, RDS, VPC, IAM, Route 53, CloudFront, CloudWatch), GCP, Cloudflare"
+      tools: "AWS (EC2, RDS, VPC, Lambda, S3, IAM, CloudWatch), GCP, Azure, Cloudflare"
     - name: "iac"
       area: "automation"
       tools: "Terraform, Ansible, Packer"
@@ -61,16 +61,19 @@ stack:
       tools: "Jenkins, GitHub Actions, GitLab CI"
     - name: "observability"
       area: "monitoring"
-      tools: "Prometheus, Grafana, CloudWatch"
+      tools: "Prometheus, Grafana, CloudWatch; alerting, dashboards"
+    - name: "linux"
+      area: "administration"
+      tools: "Linux/UNIX, macOS; performance tuning, security hardening"
+    - name: "network"
+      area: "networking &amp; security"
+      tools: "TCP/IP, DNS, TLS/SSL, VPN, access control, backup/restore"
     - name: "servers"
       area: "web &amp; data"
       tools: "Nginx, Apache, MySQL, PostgreSQL"
-    - name: "virtualization"
-      area: "local labs"
-      tools: "VirtualBox, Vagrant"
     - name: "scripting"
       area: "automation"
-      tools: "Bash, Python"
+      tools: "Python, Bash, Zsh"
 
 ### Services [ services ]
 services:
@@ -78,20 +81,28 @@ services:
   subtitle: "ls ~/projects"
   items:
     - icon: "fab fa-aws"
-      name: "HA WordPress <br />on AWS"
-      text: "Terraform code for WordPress on AWS: two EC2 instances in different availability zones, VPC, RDS, load balancer, EFS for storage and backups, CloudWatch metrics. <a href=\"https://github.com/KostanPROFF/terraform_aws_wordpress\">GitHub</a>"
+      name: "AWS infrastructure <br />with Terraform"
+      text: "Scalable AWS infrastructure (EC2, RDS, VPC, CloudWatch) for client workloads, all as code; lower running costs through resource optimization."
 
     - icon: "fas fa-cube"
-      name: "Kubernetes <br />cluster"
-      text: "Local cluster built with Vagrant on VirtualBox, and bare-metal deployment with Kubespray. <a href=\"https://github.com/KostanPROFF/mirantis_task_for_devops_intern\">GitHub</a>"
+      name: "Kubernetes <br />clusters"
+      text: "Multi-node clusters for containerized microservices on high-traffic workloads; better resource use and availability. <a href=\"https://github.com/KostanPROFF/mirantis_task_for_devops_intern\">GitHub</a>"
 
-    - icon: "fab fa-docker"
-      name: "Docker <br />CI/CD"
-      text: "Packaged websites in Docker and set up a Jenkins pipeline for continuous delivery of updates."
+    - icon: "fab fa-gitlab"
+      name: "CI/CD <br />automation"
+      text: "GitLab CI pipelines that build, test and deploy automatically; shorter release time and better code quality."
+
+    - icon: "fab fa-wordpress"
+      name: "WordPress on AWS <br />as code"
+      text: "Highly available WordPress with Terraform: EC2, RDS, VPC networking, CloudWatch monitoring, documented and version-controlled. <a href=\"https://github.com/KostanPROFF/terraform_aws_wordpress\">GitHub</a>"
+
+    - icon: "fas fa-chart-line"
+      name: "Monitoring <br />stack"
+      text: "Prometheus for metrics, Grafana for dashboards, alerting rules for early incident detection and faster troubleshooting."
 
     - icon: "fas fa-globe"
       name: "This <br />website"
-      text: "Jekyll site, built and deployed by Cloudflare Pages on every push. Moved from AWS S3 and CloudFront. <a href=\"https://github.com/KostanPROFF/resume\">GitHub</a>"
+      text: "Jekyll site, built and deployed by Cloudflare Pages on every push. Moved from AWS S3. <a href=\"https://github.com/KostanPROFF/resume\">GitHub</a>"
 
 ### Resume [ resume ]
 resume:
@@ -99,29 +110,21 @@ resume:
     title: "Experience"
     subtitle: "git log --career"
     items:
-      - year: "2022 — now"
+      - year: "May 2022 — May 2023"
         name: "DevOps Engineer · Sprout IT"
-        text: "Server configuration and deployment with Ansible and Terraform. CI/CD pipelines in Jenkins, GitHub Actions and GitLab CI. Monitoring with Prometheus and Grafana. Docker and Kubernetes, Nginx and Apache, MySQL and PostgreSQL. Bash and Python automation."
+        text: "Automated server configuration and deployments with Terraform and Ansible. Maintained GitLab CI pipelines. Containerized microservices with Docker and ran production Kubernetes clusters. Built Prometheus and Grafana monitoring with alerting and dashboards."
 
-      - year: "2022 · June — July"
-        name: "Braam Research LLC"
-        text: "Installed and configured a Kubernetes cluster."
+      - year: "Jun 2022 — Jul 2022"
+        name: "DevOps Engineer · Braam Research LLC (remote, USA)"
+        text: "Built Kubernetes clusters from scratch, automated provisioning with Terraform and Ansible, set up GitLab CI and Prometheus/Grafana monitoring, supported incident response and root-cause analysis."
 
-      - year: "2021 — 2022"
-        name: "DevOps training · GeekBrains"
-        text: "DevOps engineer course; Docker and Kubernetes certificates."
-
-      - year: "2010 — 2021"
+      - year: "Mar 2011 — Apr 2023"
         name: "System Administrator · Financial-Legal College"
-        text: "Support for hardware, software, the corporate network and IT services."
+        text: "Managed 150+ macOS and Linux endpoints: updates, patching, security hardening, Bash automation, SSH and VPN access, backup, restore and disaster recovery."
 
-      - year: "2005 — 2015"
-        name: "Freelance web, graphic and 3D designer"
-        text: ""
-
-      - year: "2005 — 2010"
-        name: "System Administrator, Helpdesk · Ugbor"
-        text: "Local network setup and support, user assistance, Windows installation and configuration."
+      - year: "Sep 2008 — Jun 2011"
+        name: "System Administrator / Helpdesk · Transtempo"
+        text: "Local network and end-user support, OS and connectivity troubleshooting, hardware and software installs."
 
   education:
     title: "Education"
@@ -129,11 +132,11 @@ resume:
     items:
       - year: "2008 — 2013"
         name: "Open International University of Human Development «Ukraine»"
-        text: "Bachelor's degree in computer-aided environmental-economic monitoring."
+        text: "Bachelor's degree in Computer Science."
 
-      - year: "1999 — 2002"
-        name: "Kyiv National University of Construction and Architecture"
-        text: "Computer applications, IT."
+      - year: "Certifications"
+        name: "DevOps Engineer · Docker Certified Associate"
+        text: "Kubernetes (CKA-level training)."
 
 ### Skills [ skills ]
 skills:
@@ -153,7 +156,7 @@ skills:
 
         - label: "English"
           value: "25" #0-100 progress in %
-          text: "A2. Read and write, can't talk."
+          text: "A2, improving"
 
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*
@@ -169,14 +172,14 @@ contacts:
   subname: "DevOps Engineer"
   signature: "Konstantin Kozulko"
   list:
-    - label: "Residence:"
-      value: "Kyiv, Ukraine"
+    - label: "Location:"
+      value: "Antelope, CA, USA"
 
     - label: "Phone:"
-      value: "+380 93 875 13 57"
+      value: "+1 (916) 883-8094"
 
     - label: "E-mail:"
-      value: "2913814@gmail.com"
+      value: "kostan@proff.dev"
 
     - label: "Telegram:"
       value: "@kostanproff"
