@@ -4,7 +4,8 @@
 
 ### Started Image
 started-image1:
-  image: "assets/img/man.jpg"
+  image: "assets/img/man.webp"
+  image_mobile: "assets/img/man-600.webp"
 
 started-image2:
   image: "assets/img/man2.jpg"

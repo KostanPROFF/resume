@@ -3,6 +3,14 @@
 <!-- Background -->
 <div class="background-bg">
   <div class="background-filter">
+    {%- if content.image_mobile %}
+    <style>
+      .background-img.hero-img { background-image: url({{ content.image | relative_url }}); }
+      @media (max-width: 720px) { .background-img.hero-img { background-image: url({{ content.image_mobile | relative_url }}); } }
+    </style>
+    <div class="background-img hero-img"></div>
+    {%- else %}
     <div class="background-img" style="background-image: url({{ content.image | relative_url }});"></div>
+    {%- endif %}
   </div>
 </div>

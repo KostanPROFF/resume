@@ -1,29 +1,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   {%- seo -%}
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600;800&display=swap" rel="stylesheet"></noscript>
   
+  {%- assign v = site.time | date: '%s' -%}
+  {%- assign home = false -%}{%- if page.url == '/' -%}{%- assign home = true -%}{%- endif -%}
+
+  {%- if page.bg_type == 'image-1' -%}
+  {%- assign hero = site.data.hero['started-image1'] %}
+  {%- if hero.image_mobile %}
+  <link rel="preload" as="image" href="{{ hero.image_mobile | relative_url }}" media="(max-width: 720px)" fetchpriority="high">
+  <link rel="preload" as="image" href="{{ hero.image | relative_url }}" media="(min-width: 721px)" fetchpriority="high">
+  {%- else %}
+  <link rel="preload" as="image" href="{{ hero.image | relative_url }}" fetchpriority="high">
+  {%- endif %}
+  {%- endif %}
+
   <!-- Load CSS -->
-  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/animate.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/jarallax.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/swiper.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/fontawesome.css' | relative_url }}" />
-  <link rel="stylesheet" href="{{ 'assets/css/syntax.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}?v={{ v }}">
+  {%- unless home %}
+  <link rel="stylesheet" href="{{ 'assets/css/magnific-popup.css' | relative_url }}?v={{ v }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/animate.css' | relative_url }}?v={{ v }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/jarallax.css' | relative_url }}?v={{ v }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/swiper.css' | relative_url }}?v={{ v }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/owl.carousel.css' | relative_url }}?v={{ v }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/syntax.css' | relative_url }}?v={{ v }}" />
+  {%- endunless %}
+  <!-- icons: not render-blocking -->
+  <link rel="stylesheet" href="{{ 'assets/css/fontawesome.css' | relative_url }}?v={{ v }}" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="{{ 'assets/css/fontawesome.css' | relative_url }}?v={{ v }}" /></noscript>
 
   {% assign settings = site.data.settings['settings'] %}
 
   <!-- Template Colors -->
   {% if settings.quick_colors != '' %}
-  <link rel="stylesheet" href="{{ 'assets/css/template-colors/' | append: settings.quick_colors | append: '.css' | relative_url }}" />
+  <link rel="stylesheet" href="{{ 'assets/css/template-colors/' | append: settings.quick_colors | append: '.css' | relative_url }}?v={{ v }}" />
   {% endif %}
 
   <!--[if lt IE 9]>

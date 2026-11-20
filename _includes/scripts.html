@@ -1,18 +1,22 @@
-<!-- Plugins -->
-<script src="{{ 'assets/js/jquery.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/velocity.min.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/jquery.validate.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/magnific-popup.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/typed.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/jarallax.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/jarallax-video.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/jarallax-element.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/imagesloaded.pkgd.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/isotope.pkgd.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/owl.carousel.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/swiper.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/rrssb.js' | relative_url }}"></script>
-<script src="{{ 'assets/js/simple-jekyll-search.js' | relative_url }}"></script>
+{%- assign v = site.time | date: '%s' -%}
+{%- assign home = false -%}{%- if page.url == '/' -%}{%- assign home = true -%}{%- endif -%}
+<!-- Plugins (deferred; the home page loads only what it uses) -->
+<script defer src="{{ 'assets/js/jquery.min.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/velocity.min.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/jquery.validate.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/typed.js' | relative_url }}?v={{ v }}"></script>
+{%- unless home %}
+<script defer src="{{ 'assets/js/magnific-popup.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/jarallax.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/jarallax-video.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/jarallax-element.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/imagesloaded.pkgd.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/isotope.pkgd.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/owl.carousel.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/swiper.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/rrssb.js' | relative_url }}?v={{ v }}"></script>
+<script defer src="{{ 'assets/js/simple-jekyll-search.js' | relative_url }}?v={{ v }}"></script>
+{%- endunless %}
 
 <!-- Main -->
-<script src="{{ 'assets/js/scripts.js' | relative_url }}"></script>
+<script defer src="{{ 'assets/js/scripts.js' | relative_url }}?v={{ v }}"></script>

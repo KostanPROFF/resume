@@ -1,7 +1,7 @@
 /* Terminal style: colors and fonts on top of the Myour layout.
    Headings, labels and data use the mono face; running text uses IBM Plex Sans. */
 
-$term_dim: #6E7D85;
+$term_dim: #8494A0;
 $term_ok: #7EE0B5;
 $term_ok_bg: #12302A;
 
@@ -247,4 +247,9 @@ button {
 		-webkit-backdrop-filter: blur(6px);
 		backdrop-filter: blur(6px);
 	}
+}
+
+/* preloader stays out of the first paint; scripts.js arms it for page transitions */
+.preloader:not(.ready) {
+	display: none;
 }
