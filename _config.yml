@@ -34,7 +34,7 @@ email: "2913814@gmail.com"
 description: "Resume / CV / vCard / Personal site"
 author: "Admin"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kostanproff.com" # the base hostname & protocol for your site, e.g. http://example.com
 date_format: "%d %B %Y"
 
 # paginations & permalinks
