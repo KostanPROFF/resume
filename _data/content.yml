@@ -29,18 +29,23 @@ about:
 
     - label: "Phone"
       value: "+1 (916) 883-8094"
+      url: "tel:+19168838094"
 
     - label: "E-mail"
       value: "kostan@proff.dev"
+      url: "mailto:kostan@proff.dev"
 
     - label: "Telegram"
       value: "@kostanproff"
+      url: "https://t.me/kostanproff"
 
     - label: "Linkedin"
       value: "kostan-proff"
+      url: "https://www.linkedin.com/in/kostan-proff"
 
     - label: "GitHub"
       value: "kostanproff"
+      url: "https://github.com/KostanPROFF"
 
 ### Stack [ stack ]
 stack:
@@ -177,15 +182,20 @@ contacts:
 
     - label: "Phone:"
       value: "+1 (916) 883-8094"
+      url: "tel:+19168838094"
 
     - label: "E-mail:"
       value: "kostan@proff.dev"
+      url: "mailto:kostan@proff.dev"
 
     - label: "Telegram:"
       value: "@kostanproff"
+      url: "https://t.me/kostanproff"
 
     - label: "Linkedin"
       value: "kostan-proff"
+      url: "https://www.linkedin.com/in/kostan-proff"
 
     - label: "GitHub"
       value: "kostanproff"
+      url: "https://github.com/KostanPROFF"

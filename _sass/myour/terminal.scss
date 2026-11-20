@@ -180,3 +180,71 @@ button {
 		color: $light_color;
 	}
 }
+
+/* header like variant A: ~/kostanproff$ and a small cv.pdf button */
+.header .logo {
+	width: auto;
+	.logo-lnk {
+		max-width: none;
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0;
+		color: $light_color;
+		white-space: nowrap;
+	}
+	.logo-prompt {
+		color: $active_color;
+	}
+}
+.header .top-menu ul li a {
+	text-transform: none;
+	font-weight: 400;
+	font-size: 14px;
+	color: $extra_color;
+	&:hover {
+		color: $active_color;
+	}
+}
+.header .download-cv-btn.term-cv-btn {
+	float: right;
+	margin-top: 22px;
+	margin-right: 22px;
+	padding: 8px 14px;
+	font-size: 14px;
+	line-height: 1.2;
+	font-weight: 600;
+	color: $active_color;
+	border: 1px solid $active_color;
+	border-radius: 4px;
+	background: transparent;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s;
+	&:hover {
+		background: $active_color;
+		color: $default_bg;
+	}
+}
+.header.fixed {
+	background: $extra_bg;
+}
+
+/* clickable contact values */
+.info-list ul li a {
+	color: $default_color;
+	text-decoration: none;
+	border-bottom: 1px dashed $lines_color;
+	&:hover {
+		color: $active_color;
+		border-bottom-color: $active_color;
+	}
+}
+
+/* mobile: solid bar so the logo stays readable over the photo */
+@media (max-width: 1199px) {
+	.header {
+		top: 0;
+		background: rgba(14, 19, 22, 0.88);
+		-webkit-backdrop-filter: blur(6px);
+		backdrop-filter: blur(6px);
+	}
+}
