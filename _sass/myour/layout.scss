@@ -711,7 +711,7 @@
 		padding: 70px 35px 30px 35px;
 		width: 480px;
 		font-size: 60px;
-		background: #373b40;
+		background: $default_bg;
 		@include border-radius(360px 360px 0 0);
 	}
 	.section.started .started-content {

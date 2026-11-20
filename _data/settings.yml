@@ -4,18 +4,17 @@
 
 ### Main Settings
 settings:
-  quick_colors: "blue" # select quick color schemes: "beige", "blue", "brown", "green_light", "green", "orange", "purple", "red", "yellow_light", "yellow". If empty colors taken from _sass/ryancv/settings.scss
+  quick_colors: "terminal" # select quick color schemes: "beige", "blue", "brown", "green_light", "green", "orange", "purple", "red", "yellow_light", "yellow". If empty colors taken from _sass/ryancv/settings.scss
 
 ### Header
 header:
   logo:
-    image: "assets/img/logo.png"
-    text: "Konstantin <br />Kozulko"
+    text: "~/kostanproff<span class=\"logo-prompt\">$</span>"
     alt: "Konstantin Kozulko"
 
   button:
-    text: "Download CV"
-    url: "https://s3.eu-central-1.amazonaws.com/kostanproff.com/CV-DevOps-Konstantin-Kozulko.pdf"
+    text: "cv.pdf ↓"
+    url: "assets/cv/Konstantin-Kozulko-DevOps-CV.pdf"
     icon: "fas fa-download"
 
 ### Portfolio Filters Settings
