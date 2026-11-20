@@ -17,23 +17,24 @@
 */
 
 /* Background Colors */
-$default_bg: #373b40;
-$extra_bg: #585d65;
-$lines_color: #585d65;
+$default_bg: #0E1316;
+$extra_bg: #11181C;
+$lines_color: #1F2A30;
 
 /* Colors */
-$default_color: #fff;
-$extra_color: #999;
-$light_color: #eee;
+$default_color: #D6DEE2;
+$extra_color: #9AA8AF;
+$light_color: #F2F6F8;
 $white_color: #FFF;
 $dark_color: #000;
-$active_color: #68e0cf;
-$active_profile_color: #68e0cf;
+$active_color: #5FD4E6;
+$active_profile_color: #5FD4E6;
 $error_color: red;
 
 /* Fonts */
-$default_font: 'Poppins';
-$extra_font: 'Mr Dafoe';
+$default_font: 'IBM Plex Sans';
+$mono_font: 'JetBrains Mono';
+$extra_font: 'JetBrains Mono';
 
 /* Fonts Size */
 $logo_size: 18px;

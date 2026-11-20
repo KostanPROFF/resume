@@ -1,0 +1,33 @@
+{% assign content = site.data.content['stack'] %}
+
+<!-- Section Stack -->
+<div class="section stack" id="section-stack">
+  <div class="content">
+
+    <!-- title -->
+    <div class="titles">
+      <div class="title">{{ content.title }}</div>
+      <div class="subtitle">{{ content.subtitle }}</div>
+    </div>
+
+    <!-- kubectl-style table -->
+    <div class="stack-table-wrap">
+      <table class="stack-table">
+        <thead>
+          <tr><th>NAME</th><th>AREA</th><th>STATUS</th><th>TOOLS</th></tr>
+        </thead>
+        <tbody>
+          {% for item in content.items %}
+          <tr>
+            <td class="name">{{ item.name }}</td>
+            <td>{{ item.area }}</td>
+            <td class="status">Running</td>
+            <td>{{ item.tools }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>

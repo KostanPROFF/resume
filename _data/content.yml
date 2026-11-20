@@ -1,16 +1,16 @@
 # Sections content configuration file
 ##
-### use navigation.yml file to re-order, delete or add section of each card
-### here you can find all content in all pre-build sections
+### the sections shown on the home page and their order are set in index.html (front matter "sections")
 
 ### Started [ started ]
 started:
   title: "Konstantin <br />Kozulko"
   typed:
     - "DevOps Engineer"
-    - "Web Designer"
-    - "Graphic Designer"
-  text: "Hello! I am DevOps Engineer from Kyiv, Ukraine. I used to be a graphic designer, but I stopped enjoying it and decided to become a devops engineer."
+    - "AWS · Terraform · Kubernetes"
+    - "CI/CD · Monitoring"
+  text: "I build and run infrastructure on AWS and GCP: Terraform, Ansible, Docker, Kubernetes, CI/CD and monitoring. Before DevOps I spent 15 years as a system administrator and designer."
+  status: "open to remote work · Kyiv, UTC+2"
   button:
     text: "Contact Me"
     link: "#section-contacts"
@@ -18,18 +18,14 @@ started:
 ### About [ about ]
 about:
   title: "About Me"
-  subtitle: "My story"
-  text: "<p>By education I am a programmer, but I never liked programming, so after graduating from college I decided to move towards graphic design (since childhood I love to draw).</p><p>Unfortunately after 15 years of work as a graphic designer I did not enjoy this profession and I decided to look for something else. I have always had a taste for computers, I love to configure, install software and trabelshooting. So Devops is something that satisfies all my interests.</p>"
+  subtitle: "whoami"
+  text: "<p>I studied programming, then spent years as a system administrator and as a freelance web, graphic and 3D designer. Setting up servers, networks and software and fixing things when they break was always the part I liked most, so in 2021 I moved into DevOps.</p><p>Today I automate infrastructure with Terraform and Ansible, run containers in Docker and Kubernetes, build CI/CD pipelines and keep an eye on everything with Prometheus and Grafana. Because of my health I work remotely only.</p>"
   list:
- 
     - label: "Residence"
-      value: "Ukraine"
+      value: "Kyiv, Ukraine"
 
-    - label: "Freelance"
-      value: "Available"
-
-    - label: "Address"
-      value: "Kyiv"
+    - label: "Work format"
+      value: "Remote"
 
     - label: "Phone"
       value: "+380 93 875 13 57"
@@ -46,224 +42,118 @@ about:
     - label: "GitHub"
       value: "kostanproff"
 
-
+### Stack [ stack ]
+stack:
+  title: "Skills"
+  subtitle: "kubectl get skills -o wide"
+  items:
+    - name: "cloud"
+      area: "infrastructure"
+      tools: "AWS (EC2, S3, RDS, VPC, IAM, Route 53, CloudFront, CloudWatch), GCP, Cloudflare"
+    - name: "iac"
+      area: "automation"
+      tools: "Terraform, Ansible, Packer"
+    - name: "containers"
+      area: "orchestration"
+      tools: "Docker, Kubernetes, Kubespray"
+    - name: "ci-cd"
+      area: "delivery"
+      tools: "Jenkins, GitHub Actions, GitLab CI"
+    - name: "observability"
+      area: "monitoring"
+      tools: "Prometheus, Grafana, CloudWatch"
+    - name: "servers"
+      area: "web &amp; data"
+      tools: "Nginx, Apache, MySQL, PostgreSQL"
+    - name: "virtualization"
+      area: "local labs"
+      tools: "VirtualBox, Vagrant"
+    - name: "scripting"
+      area: "automation"
+      tools: "Bash, Python"
 
 ### Services [ services ]
 services:
   title: "Projects"
-  subtitle: "What I Do"
+  subtitle: "ls ~/projects"
   items:
-    - icon: "fas fa-cloud"
-      name: "Cloud <br />Services"
-      text: "Working with cloud services."
-
-    - icon: "fas fa-filter"
-      name: "Cisco <br />Packet Tracer"
-      text: "Working with computer networks, knowledge of Cisco Packet Tracer."
-
-    - icon: "fab fa-adn"
-      name: "Ansible <br />Playbook"
-      text: "Can write Ansible playbook to automate deployment and routine tasks."
-
-    - icon: "fab fa-docker"
-      name: "Docker <br />CI/CD"
-      text: "Packaged sites in Docker for future updates, set up CI/CD pipeline using Jenkins for continuous delivery of web application updates."
-
     - icon: "fab fa-aws"
-      name: "Amazon <br />Web Services"
-      text: "I have experience with AWS, EC2, S3 services, RDS databases, VPS networks, Route 53, IAM, CloudFront, CloudWatch."
-
-    - icon: "fas fa-globe"
-      name: "Web-site <br />Deploy"
-      text: "I have my own website https://kostanproff.com built on Jekyll engine on AWS S3 bucket with my domain connected via Route53 and created SSL certificate in Certificate Manager connected to website via CloudFront. Configured auto-deploy in Github Actions: https://github.com/KostanPROFF/online-cv"
-
-    - icon: "fas fa-info"
-      name: "Terraform <br />infrastructure"
-      text: "Deployed infrastructure using Terraform to create WordPress on AWS. To do this I created 2 EC2 instances, in different availability zones using VPC networks, RDS database, LoadBalacer for load balancing, connected EFS for data storage and backup, load metrics were collected using CloudWatch. The code is available on GitHub: https://github.com/KostanPROFF/terraform_aws_wordpress"
+      name: "HA WordPress <br />on AWS"
+      text: "Terraform code for WordPress on AWS: two EC2 instances in different availability zones, VPC, RDS, load balancer, EFS for storage and backups, CloudWatch metrics. <a href=\"https://github.com/KostanPROFF/terraform_aws_wordpress\">GitHub</a>"
 
     - icon: "fas fa-cube"
       name: "Kubernetes <br />cluster"
-      text: "Created a local Kubernetes cluster using Vagrantfile on VirtualBox: https://github.com/KostanPROFF/mirantis_task_for_devops_intern"
+      text: "Local cluster built with Vagrant on VirtualBox, and bare-metal deployment with Kubespray. <a href=\"https://github.com/KostanPROFF/mirantis_task_for_devops_intern\">GitHub</a>"
 
-### Stack [ stack ]
-stack:
-  title: "Projects"
-  subtitle: "What I Do"
-  items:
-    - icon: "fas fa-cloud"
-      name: "Cloud <br />Services"
-      text: "Working with cloud services."
+    - icon: "fab fa-docker"
+      name: "Docker <br />CI/CD"
+      text: "Packaged websites in Docker and set up a Jenkins pipeline for continuous delivery of updates."
 
-### Pricing [ pricing ]
-pricing:
-  title: "Pricing"
-  subtitle: "My Plans"
-  items:
-    - icon: "fas fa-star"
-      name: "Basic"
-      price: "39"
-      price_before: "$"
-      price_after: "hour"
-      list:
-        - value: "Web Development"
-          disable: "no"
-        - value: "Advetising"
-          disable: "no"
-        - value: "Game Development"
-          disable: "no"
-        - value: "Music Writing"
-          disable: "yes"
-        - value: "Photography"
-          disable: "yes"
-      button: "Buy Now"
-      link: "#section-contacts"
-
-    - icon: "fas fa-rocket"
-      name: "Premium"
-      price: "59"
-      price_before: "$"
-      price_after: "hour"
-      list:
-        - value: "Web Development"
-          disable: "no"
-        - value: "Advetising"
-          disable: "no"
-        - value: "Game Development"
-          disable: "no"
-        - value: "Music Writing"
-          disable: "no"
-        - value: "Photography"
-          disable: "no"
-      button: "Buy Now"
-      link: "#section-contacts"
-
-    - icon: "fas fa-space-shuttle"
-      name: "Ultimate"
-      price: "79"
-      price_before: "$"
-      price_after: "hour"
-      list:
-        - value: "Web Development"
-          disable: "no"
-        - value: "Advetising"
-          disable: "no"
-        - value: "Game Development"
-          disable: "no"
-        - value: "Music Writing"
-          disable: "no"
-        - value: "Photography & Video"
-          disable: "no"
-      button: "Buy Now"
-      link: "#section-contacts"
+    - icon: "fas fa-globe"
+      name: "This <br />website"
+      text: "Jekyll site, built and deployed by Cloudflare Pages on every push. Moved from AWS S3 and CloudFront. <a href=\"https://github.com/KostanPROFF/resume\">GitHub</a>"
 
 ### Resume [ resume ]
 resume:
   experience:
     title: "Experience"
-    subtitle: "Working with"
+    subtitle: "git log --career"
     items:
-      - year: "Present"
-        name: "DevOps <br />Project Work "
+      - year: "2022 — now"
+        name: "DevOps Engineer · Sprout IT"
+        text: "Server configuration and deployment with Ansible and Terraform. CI/CD pipelines in Jenkins, GitHub Actions and GitLab CI. Monitoring with Prometheus and Grafana. Docker and Kubernetes, Nginx and Apache, MySQL and PostgreSQL. Bash and Python automation."
+
+      - year: "2022 · June — July"
+        name: "Braam Research LLC"
+        text: "Installed and configured a Kubernetes cluster."
+
+      - year: "2021 — 2022"
+        name: "DevOps training · GeekBrains"
+        text: "DevOps engineer course; Docker and Kubernetes certificates."
+
+      - year: "2010 — 2021"
+        name: "System Administrator · Financial-Legal College"
+        text: "Support for hardware, software, the corporate network and IT services."
+
+      - year: "2005 — 2015"
+        name: "Freelance web, graphic and 3D designer"
         text: ""
 
-      - year: "2015-2020"
-        name: "3D Graphic <br />Designer"
-        text: ""
+      - year: "2005 — 2010"
+        name: "System Administrator, Helpdesk · Ugbor"
+        text: "Local network setup and support, user assistance, Windows installation and configuration."
 
-      - year: "2005-2015"
-        name: " Freelance Web and <br />Graphic Designer"
-        text: ""
-
-     
   education:
     title: "Education"
-    subtitle: "Studied at"
+    subtitle: "cat education.log"
     items:
-      - year: "1999-2002"
-        name: "Kyiv National University Of <br />Construction And Architecture"
-        text: "Computer Applications Field Of Study IT."
-
-      - year: "2008-2013"
-        name: "Open International University of <br />Human Development «Ukraine»"
+      - year: "2008 — 2013"
+        name: "Open International University of Human Development «Ukraine»"
         text: "Bachelor's degree in computer-aided environmental-economic monitoring."
 
-      - year: "2021-2022"
-        name: "Course <br />GeekBrains"
-        text: "DevOps"
+      - year: "1999 — 2002"
+        name: "Kyiv National University of Construction and Architecture"
+        text: "Computer applications, IT."
 
 ### Skills [ skills ]
 skills:
   columns:
     - type: "circles" #skills progress type - default, dotted, circles
-      title: "Language Skills"
-      subtitle: "Reading and writing"
+      title: "Languages"
+      subtitle: "locale -a"
       slug: "lang"
       items:
-        - label: "Russian"
+        - label: "Ukrainian"
           value: "100" #0-100 progress in %
           text: "Native"
 
-        - label: "Ukrainian"
+        - label: "Russian"
           value: "100" #0-100 progress in %
           text: "Native"
 
         - label: "English"
           value: "25" #0-100 progress in %
           text: "A2. Read and write, can't talk."
-
-### Testimonials [ testimonials ]
-testimonials:
-  title: "Reviews"
-  subtitle: "What customers say"
-  items:
-    - image: "assets/img/testimonials/rev1.png"
-      name: "Joseph Mackey"
-      role: "Architect"
-      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
-
-    - image: "assets/img/testimonials/rev1.png"
-      name: "James Green"
-      role: "Art Director"
-      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
-
-    - image: "assets/img/testimonials/rev1.png"
-      name: "Joseph Mackey"
-      role: "Architect"
-      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
-
-    - image: "assets/img/testimonials/rev1.png"
-      name: "James Green"
-      role: "Art Director"
-      text: "Excellent all around! What stood out most was Jake's excellent service. He made sure our order was placed in time, even though we were ordering on a holiday."
-
-### Clients [ clients ]
-clients:
-  title: "Clients"
-  subtitle: "My partners"
-  items:
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client2.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client3.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client1.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client4.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client2.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client3.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client1.png"
-
-    - url: "https://www.bslthemes.site"
-      image: "assets/img/clients/client4.png"
 
 ### Portfolio [ portfolio ]
 #items generates from dir /_works/*
@@ -274,24 +164,20 @@ portfolio:
 ### Contact [ contacts ]
 contacts:
   title: "Contact"
-  subtitle: "Let's talk"
+  subtitle: "cat contacts.yml"
   name: "Konstantin Kozulko"
   subname: "DevOps Engineer"
   signature: "Konstantin Kozulko"
   list:
- 
     - label: "Residence:"
-      value: "Ukraine"
-
-    - label: "Address:"
-      value: "Kyiv"
+      value: "Kyiv, Ukraine"
 
     - label: "Phone:"
       value: "+380 93 875 13 57"
 
     - label: "E-mail:"
       value: "2913814@gmail.com"
-    
+
     - label: "Telegram:"
       value: "@kostanproff"
 

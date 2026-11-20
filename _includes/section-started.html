@@ -27,6 +27,11 @@
           {{ content.text }}
         </div>
 
+        {% if content.status %}
+        <div class="status-pill">{{ content.status }}</div>
+        <br /><br />
+        {% endif %}
+
         <!-- button -->
         <a href="{{ content.button.link }}" class="btn">
           <span class="animated-button"><span>{{ content.button.text }}</span></span>

@@ -4,7 +4,7 @@
 
 ### Main Settings
 settings:
-  quick_colors: "blue" # select quick color schemes: "beige", "blue", "brown", "green_light", "green", "orange", "purple", "red", "yellow_light", "yellow". If empty colors taken from _sass/ryancv/settings.scss
+  quick_colors: "terminal" # select quick color schemes: "beige", "blue", "brown", "green_light", "green", "orange", "purple", "red", "yellow_light", "yellow". If empty colors taken from _sass/ryancv/settings.scss
 
 ### Header
 header:
