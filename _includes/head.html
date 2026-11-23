@@ -40,7 +40,7 @@
   {% assign settings = site.data.settings['settings'] %}
 
   <!-- Template Colors -->
-  {% if settings.quick_colors != '' %}
+  {% if settings.quick_colors != '' and settings.quick_colors != 'terminal' %}
   <link rel="stylesheet" href="{{ 'assets/css/template-colors/' | append: settings.quick_colors | append: '.css' | relative_url }}?v={{ v }}" />
   {% endif %}
 
