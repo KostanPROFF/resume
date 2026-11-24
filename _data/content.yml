@@ -175,7 +175,6 @@ contacts:
   subtitle: "cat contacts.yml"
   name: "Konstantin Kozulko"
   subname: "DevOps Engineer"
-  signature: "Konstantin Kozulko"
   list:
     - label: "Location:"
       value: "Antelope, CA, USA"

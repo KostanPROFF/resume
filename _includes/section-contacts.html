@@ -49,7 +49,7 @@
           {% endfor %}
         </ul>
       </div>
-      <div class="author">{{ content.signature }}</div>
+      {% if content.signature %}<div class="author">{{ content.signature }}</div>{% endif %}
     </div>
 
     <div class="clear"></div>
