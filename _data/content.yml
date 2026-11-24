@@ -30,6 +30,8 @@ about:
     - label: "Phone"
       value: "+1 (916) 883-8094"
       url: "tel:+19168838094"
+      extra_text: "WhatsApp"
+      extra_url: "https://wa.me/19168838094"
 
     - label: "E-mail"
       value: "kostan@proff.dev"
@@ -182,6 +184,8 @@ contacts:
     - label: "Phone:"
       value: "+1 (916) 883-8094"
       url: "tel:+19168838094"
+      extra_text: "WhatsApp"
+      extra_url: "https://wa.me/19168838094"
 
     - label: "E-mail:"
       value: "kostan@proff.dev"
